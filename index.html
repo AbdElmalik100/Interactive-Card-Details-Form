@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Normalize File -->
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <!-- Fontawesome File -->
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <!-- Main File -->
+        <link rel="stylesheet" href="CSS/master.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap">
+        <title>Challenge 1</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="lhs">
+                <img src="images/bg-main-desktop.png" alt="">
+                <div class="front">
+                    <img src="images/bg-card-front.png" alt="">
+                    <div class="card-details">
+                        <img src="images/card-logo.svg" class="card-logo">
+                        <h2 class="card-num">0000 0000 0000 0000</h2>
+                        <div class="extra-info">
+                            <span class="card-name">Jane Appleseed</span>
+                            <span class="exp-date">00/00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <img src="images/bg-card-back.png" alt="">
+                    <span class="cvc-number">000</span>
+                </div>
+            </div>
+            <div class="rhs">
+                <form action="" class="card-info">
+                    <label for="name" data-empty="Can't be blank">cardholder name</label> 
+                    <input type="text" class="cardholder-name" id="name" placeholder="e.g. Jane Appleseed" data-name="for=name">
+
+                    <label for="number" data-empty="Can't be blank" data-wrong="Wrong format, numbers only">card number</label>
+                    <input type="text" class="card-number" id="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" data-name="for=number">
+
+                    <label for="mmyy" class="exp" data-empty="Can't be blank">exp. date (mm/yy)</label>
+                    <label for="cvc" data-empty="Can't be blank">cvc</label>
+                    <input type="text" class="mm" id="mmyy" placeholder="MM" maxlength="2" data-name="for=mmyy">
+                    <input type="text" class="yy" id="mmyy" placeholder="YY" maxlength="2" data-name="for=mmyy">
+                    <input type="text" class="cvc" id="cvc" placeholder="e.g. 123" maxlength="3" data-name="for=cvc">
+
+                    <input type="submit" value="Confirm">
+                </form>
+                <div class="confirmation">
+                    <img src="images/icon-complete.svg" alt="">
+                    <h1>Thank You!</h1>
+                    <p>We've added your card details</p>
+                    <button class="continue-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+        <script src="JavaScript/master.js"></script>
+    </body>
+</html>
